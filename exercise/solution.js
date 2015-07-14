@@ -1,3 +1,13 @@
+//**************************************//
+// WARNING: This file contains snippets only. 
+// It is not working code, but
+// we will use code like this 
+// in our server routes later.
+//**************************************//
+
+
+
+
 // Embedded data: Users and Tweets
 
 // 1) Create a user
@@ -61,7 +71,7 @@ db.Food.find({}, function(err, foods){
 // 4) List all the ingredients in a Food
 
 // http://mongoosejs.com/docs/populate.html
-db.Food.findOne({}, function(err, foundFood){//.populate('ingredients').exec(function (err, foundFood) {
+db.Food.findOne({}).populate('ingredients').exec(function (err, foundFood) {
   console.log(foundFood.ingredients);
 });
 
