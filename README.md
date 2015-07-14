@@ -178,6 +178,8 @@ NOTE: After each step is successful, save the code you used in `challenges.js`.
 
 1. List all tweets of a specific user.
 
+1. Create a new tweet and add it to the user's list.
+
 **Goal: manipulate referenced data**
 
 NOTE: After each step is successful, save the code you used in `challenges.js`.
@@ -189,3 +191,5 @@ NOTE: After each step is successful, save the code you used in `challenges.js`.
 1. List all the foods.
 
 1. List all the ingredients in the food you created. Hint: see the story/creator example in the [mongoose `populate` documentation](http://mongoosejs.com/docs/populate.html).
+
+1. Create a new ingredient and add it to the food's list.
