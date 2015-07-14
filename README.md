@@ -166,7 +166,7 @@ Create and navigate through relational data in MongoDB.
 
 **Goal: manipulate embedded data**
 
-NOTE: After each step is successful, save the code you used in `solution.js`.
+NOTE: After each step is successful, save the code you used in `challenges.js`.
 
 1. In the REPL, create a user.
 
@@ -180,7 +180,7 @@ NOTE: After each step is successful, save the code you used in `solution.js`.
 
 **Goal: manipulate referenced data**
 
-NOTE: After each step is successful, save the code you used in `solution.js`.
+NOTE: After each step is successful, save the code you used in `challenges.js`.
 
 1. Create at least two ingredients.
 
