@@ -15,19 +15,19 @@
 
 Each person "has one" social security number, and each social security number "has one" person.
 
-<img src="./img/one_to_one.png" alt="one to one erd" style="width: 250px;">
+<img src="./img/one_to_one.png" alt="one to one erd"  width="250">
 
 ###One-to-Many
 
 Each tree "has many" leaves, and each leaf "has one" tree.
 
-<img src="./img/one_to_many.png" alt="one to many erd" style="width: 250px;">
+<img src="./img/one_to_many.png" alt="one to many erd" width="250">
 
 ###Many-to-Many
 
 Each student "has many" classes, and each class "has many" students.
 
-<img src="./img/many_to_many.png" alt="many to many erd" style="width: 250px;">
+<img src="./img/many_to_many.png" alt="many to many erd"  width="250">
 
 ###Entity Relationship Diagrams
 
@@ -74,7 +74,7 @@ var foodSchema = new Schema({
     default: ""
   },
   ingredients: [{
-    type: Schema.Types.ObjectId,	//REFERENCING :D
+    type: Schema.Types.ObjectId,  //REFERENCING :D
     ref: 'Ingredient'
   }]
 });
@@ -106,7 +106,7 @@ var userSchema = new Schema({
     type: String,
     default: ""
   },
-  tweets: [tweetSchema]		// EMBEDDING :D
+  tweets: [tweetSchema]   // EMBEDDING :D
 });
 ```
 
@@ -168,7 +168,7 @@ Create and navigate through relational data in MongoDB.
 
 NOTE: After each step is successful, save the code you used in `challenges.js`.
 
-1. In the REPL, create a user. 
+1. In the REPL, create a user.
 
 1. Create at least two tweets.
 
