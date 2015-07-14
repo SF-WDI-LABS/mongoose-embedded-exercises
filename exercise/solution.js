@@ -26,6 +26,13 @@ db.User.findOne({name: "samantha"}, function(err, user){
   console.log(user.tweets);
 });
 
+// 6) Create a new tweet and add it to the user
+var tweet3 = new db.Tweet({body: "supercalifragilisticexpialidocious"});
+db.User.findOne({name: "samantha"}, function(err, user){
+  user.tweets.push(tweet3);
+  user.save();
+  console.log(user);
+});
 
 
 // Referenced data: Foods and Ingredients
@@ -35,8 +42,8 @@ var sauce = new db.Ingredient({title: "Tomato Sauce", origin: "Napoli"});
 sauce.save();
 var cheese = new db.Ingredient({title: "Parmigiano Regianno", origin: "Parma"});
 cheese.save();
-var sausage = new db.Ingredient({title: "Sweet Italian sausage", origion: "???"});
-sausage.save();
+var mushrooms = new db.Ingredient({title: "Button Mushrooms", origion: "???"});
+mushrooms.save();
 
 
 // 2) Create a food that references those ingredients
@@ -53,26 +60,32 @@ db.Food.find({}, function(err, foods){
 
 // 4) List all the ingredients in a Food
 
+// http://mongoosejs.com/docs/populate.html
+db.Food.findOne({}).populate('ingredients').exec(function (err, foundFood) {
+  console.log(foundFood.ingredients);
+});
+
+// or 
+
 //http://stackoverflow.com/questions/8303900/mongodb-mongoose-findmany-find-all-documents-with-ids-listed-in-array
 db.Ingredient.find(
   {
-    _id: {$in: pizza.ingredients}
+    _id: {$in: pizza.ingredients}  // NOTE: This is NOT the jQuery $
   },
   function(err, ingredients){
     console.log(ingredients);
   }
 );
 
-// or 
 
-// http://mongoosejs.com/docs/populate.html
-db.Food.findOne({}).populate('ingredients').exec(function (err, foundFood) {
-  console.log(foundFood.ingredients);
+// 5) Create a ingredient and add it to the food
+var bell_peppers = new db.Ingredient({title: "Bell Peppers", origion: "California"});
+bell_peppers.save();
+
+db.Food.findOne({name: "Pizza"}, function(err, food){
+  food.ingredients.push(bell_peppers._id);
+  food.save();
 });
-
-
-
-
 
 
 

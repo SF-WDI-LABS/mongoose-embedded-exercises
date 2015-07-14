@@ -6,6 +6,7 @@
 // 2) Build two tweets
 
 
+
 // 3) Save the tweets as embedded data in a user
 
 
@@ -15,6 +16,10 @@
 
 
 // 5) List all tweets of a specific user
+
+
+
+// 6) Create a new tweet and add it to the user
 
 
 
@@ -36,7 +41,7 @@
 
 
 
-
+// 5) Create a ingredient and add it to the food
 
 
 
