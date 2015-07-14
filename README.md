@@ -168,7 +168,7 @@ Create and navigate through relational data in MongoDB.
 
 NOTE: After each step is successful, save the code you used in `challenges.js`.
 
-1. In the REPL, create a user.
+1. In the REPL, create a user. 
 
 1. Create at least two tweets.
 
@@ -188,4 +188,4 @@ NOTE: After each step is successful, save the code you used in `challenges.js`.
 
 1. List all the foods.
 
-1. List all the ingredients in the food you created.
+1. List all the ingredients in the food you created. Hint: see the story/creator example in the [mongoose `populate` documentation](http://mongoosejs.com/docs/populate.html).
