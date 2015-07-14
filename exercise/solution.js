@@ -61,7 +61,7 @@ db.Food.find({}, function(err, foods){
 // 4) List all the ingredients in a Food
 
 // http://mongoosejs.com/docs/populate.html
-db.Food.findOne({}).populate('ingredients').exec(function (err, foundFood) {
+db.Food.findOne({}, function(err, foundFood){//.populate('ingredients').exec(function (err, foundFood) {
   console.log(foundFood.ingredients);
 });
 
@@ -79,7 +79,7 @@ db.Ingredient.find(
 
 
 // 5) Create a ingredient and add it to the food
-var bell_peppers = new db.Ingredient({title: "Bell Peppers", origion: "California"});
+var bell_peppers = new db.Ingredient({title: "Bell Peppers", origin: "California"});
 bell_peppers.save();
 
 db.Food.findOne({name: "Pizza"}, function(err, food){
