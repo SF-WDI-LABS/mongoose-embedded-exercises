@@ -135,9 +135,10 @@ Create and navigate through relational data in MongoDB.
 
 **Goal: start up a node REPL with access to our database**
 
-1. `git clone` the `w4_d2_1_exercise` repo, and `cd` into the new `w4_d2_1_exercise` directory.
 
 1. Start mongoDB with `mongod`.
+
+1. In another tab, `git clone` the `w4_d2_1_exercise` repo, and `cd` into the new `w4_d2_1_exercise` directory.
 
 1. `cd` into the folder `exercise`.
 
@@ -149,7 +150,7 @@ Create and navigate through relational data in MongoDB.
 
   Hint: in the REPL, all your models will be inside an object called `db`.
 
-1. Use `node console.js` to enter into a REPL where you can interact with your database.
+1. Type `node console.js` in the terminal to enter a REPL where you can interact with your database.
 
 
 **Goal: inspect and understand existing code base**

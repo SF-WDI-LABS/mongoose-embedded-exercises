@@ -4,6 +4,7 @@
 var REPL = require("repl");
 var db = require("./models");
 
+console.log("Node REPL");
 var repl = REPL.start("> ");
 repl.context.db = db;
 
